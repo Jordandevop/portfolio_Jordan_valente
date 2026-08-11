@@ -51,6 +51,9 @@ portfolio-jordan-valente/
 └── vite.config.js
 ```
 
+**Auteur** : Jordan Valente  
+**Email** : jordan.valente@hotmail.fr
+
 
 
 
