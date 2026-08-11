@@ -51,18 +51,7 @@ portfolio-jordan-valente/
 └── vite.config.js
 ```
 
-## Personnaliser le contenu
 
-Toutes les infos affichées (projets, compétences, textes, coordonnées) sont centralisées dans **`src/data.js`**. Pas besoin de toucher au reste du code pour :
-
-- ajouter, modifier ou retirer un projet (objet dans le tableau `projects`, avec `repo`/`demo` à `null` si non applicable)
-- changer la liste de compétences (`skills`)
-- modifier les textes FR/EN (`T.fr` / `T.en`)
-- mettre à jour l'email, LinkedIn ou GitHub (`contact`)
-
-Les couleurs et polices sont définies dans `tailwind.config.js` (clés `line`, `amber`, `ink`, `muted`, `border`, `bg` et `fontFamily.display/body/mono`).
-
-## Déployer sur Vercel
 
 
 
