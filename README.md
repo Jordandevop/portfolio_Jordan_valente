@@ -1,4 +1,4 @@
-# Portfolio — Jordan Valente
+# Portfolio - Jordan Valente
 
 Portfolio personnel de Jordan Valente, Développeur Full Stack en alternance chez Reconomia.
 
@@ -6,10 +6,10 @@ Site en une page, bilingue FR/EN, construit autour d'une ligne de trajet qui rel
 
 ## Stack technique
 
-- [Vite](https://vitejs.dev/) — build tool
+- [Vite](https://vitejs.dev/) - build tool
 - [React 18](https://react.dev/)
-- [Tailwind CSS](https://tailwindcss.com/) — styles
-- [Lucide React](https://lucide.dev/) — icônes
+- [Tailwind CSS](https://tailwindcss.com/) - styles
+- [Lucide React](https://lucide.dev/) - icônes
 
 Aucun backend, aucune base de données : c'est un site statique.
 

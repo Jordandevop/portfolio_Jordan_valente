@@ -419,7 +419,7 @@ export default function App() {
         <div className="max-w-[1100px] mx-auto flex flex-wrap items-center justify-between gap-2 font-mono text-[11.5px] text-muted">
           <span>{t.footer}</span>
           <span>
-            © {new Date().getFullYear()} Jordan Valente — {t.rightsReserved}
+            © {new Date().getFullYear()} Jordan Valente - {t.rightsReserved}
           </span>
         </div>
       </footer>

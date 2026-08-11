@@ -96,9 +96,9 @@ export const timeline = {
     { t: "Développeur Full Stack", s: "En alternance chez Reconomia" },
   ],
   en: [
-    { t: "Bus Driver", s: "10 years — Keolis Nord / TADAO" },
+    { t: "Bus Driver", s: "10 years - Keolis Nord / TADAO" },
     { t: "Career switch", s: "Full Stack Developer Bachelor's (RNCP 38606)" },
-    { t: "Full Stack Developer", s: "Apprenticeship — Reconomia" },
+    { t: "Full Stack Developer", s: "Apprenticeship - Reconomia" },
   ],
 };
 
@@ -144,7 +144,7 @@ export const T = {
     close: "Fermer",
     footer: "Fait avec React, pensé comme une ligne de bus.",
     learnMore: "En savoir plus",
-    marquee: "PROCHAIN ARRÊT — DÉVELOPPEUR FULL STACK ★ MÉTROPOLE LILLOISE ★ DISPONIBLE POUR NOUVELLES OPPORTUNITÉS ★ ",
+    marquee: "PROCHAIN ARRÊT - DÉVELOPPEUR FULL STACK ★ MÉTROPOLE LILLOISE ★ DISPONIBLE POUR NOUVELLES OPPORTUNITÉS ★ ",
     ticketPrefix: "N°",
     toggleLangLabel: "Changer de langue",
     menuOpenLabel: "Ouvrir le menu",
@@ -184,7 +184,7 @@ export const T = {
     close: "Close",
     footer: "Built with React, mapped like a bus line.",
     learnMore: "Learn more",
-    marquee: "NEXT STOP — FULL STACK DEVELOPER ★ LILLE METROPOLE ★ OPEN TO NEW OPPORTUNITIES ★ ",
+    marquee: "NEXT STOP - FULL STACK DEVELOPER ★ LILLE METROPOLE ★ OPEN TO NEW OPPORTUNITIES ★ ",
     ticketPrefix: "No.",
     toggleLangLabel: "Toggle language",
     menuOpenLabel: "Open menu",
