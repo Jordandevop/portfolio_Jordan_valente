@@ -79,6 +79,22 @@ export const projects = [
       desc: "A live community platform, built as a space for users to connect and exchange.",
     },
   },
+  {
+    id: "motus",
+    name: "Motus",
+    tech: ["JavaScript", "HTML", "CSS"],
+    repo: "https://github.com/Jordandevop/Motus",
+    demo: "https://motus-ruby.vercel.app/",
+    image: "/projects/motus.jpg",
+    fr: {
+      tag: "Jeu de lettres",
+      desc: "Une recréation du jeu Motus en JavaScript : devinez le mot caché en six tentatives, avec un retour visuel sur les lettres bien ou mal placées.",
+    },
+    en: {
+      tag: "Word game",
+      desc: "A JavaScript recreation of the French word-guessing game Motus: guess the hidden word in six tries, with visual feedback on correct and misplaced letters.",
+    },
+  },
 ];
 
 export const skills = {
