@@ -37,7 +37,7 @@ export const projects = [
     tech: ["React", "JavaScript"],
     repo: "https://github.com/Jordandevop/League-of-legend",
     demo: "https://league-of-legend-iota.vercel.app/",
-    image: "/projects/lol.jpg",
+    image: "/projects/lol.png",
     fr: {
       tag: "Site vitrine gaming",
       desc: "Un site autour de l'univers League of Legends : présentation des personnages, du lore et des mécaniques du jeu.",
