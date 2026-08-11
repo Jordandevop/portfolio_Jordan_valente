@@ -144,7 +144,7 @@ export const T = {
     close: "Fermer",
     footer: "Fait avec React, pensé comme une ligne de bus.",
     learnMore: "En savoir plus",
-    marquee: "PROCHAIN ARRÊT - DÉVELOPPEUR FULL STACK ★ MÉTROPOLE LILLOISE ★ DISPONIBLE POUR NOUVELLES OPPORTUNITÉS ★ ",
+    marquee: "PROCHAIN ARRÊT - DÉVELOPPEUR FULL STACK ★ MÉTROPOLE LILLOISE ★ DISPONIBLE POUR DE NOUVELLES OPPORTUNITÉS ★ ",
     ticketPrefix: "N°",
     toggleLangLabel: "Changer de langue",
     menuOpenLabel: "Ouvrir le menu",

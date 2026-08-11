@@ -2,7 +2,7 @@
 
 Portfolio personnel de Jordan Valente, Développeur Full Stack en alternance chez Reconomia.
 
-Site en une page, bilingue FR/EN, construit autour d'une ligne de trajet qui relie chaque section comme des arrêts, un clin d'oeil à mes dix ans passés comme conducteur receveur avant ma reconversion dans le développement.
+Site en une page, bilingue FR/EN, construit autour d'une ligne de trajet qui relie chaque section comme des arrêts, un clin d'œil à mes dix ans passés comme conducteur receveur avant ma reconversion dans le développement.
 
 ## Stack technique
 
