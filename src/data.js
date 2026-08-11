@@ -123,7 +123,7 @@ export const T = {
     stop1: "ARRÊT 01",
     aboutTitle: "À propos",
     aboutBody:
-      "Avant de coder, j'ai conduit pendant plus de dix ans les lignes de deux réseaux de transport différents, à Lille et à Lens. J'y ai appris à tenir un itinéraire, à gérer l'imprévu en temps réel et à livrer, jour après jour. Aujourd'hui je code avec la même exigence, depuis la Métropole Lilloise : construire, ligne par ligne, des produits qui tiennent la route.",
+      "Avant de coder, j'ai conduit pendant plus de dix ans les lignes de deux réseaux de transport différents, à Lille et à Lens. J'y ai appris à tenir un itinéraire, à gérer l'imprévu en temps réel, jour après jour. Aujourd'hui je code avec la même exigence, depuis la Métropole Lilloise : construire, ligne par ligne, des produits qui tiennent la route.",
     stop2: "ARRÊT 02",
     skillsTitle: "Compétences",
     skillCategories: {
