@@ -11,6 +11,12 @@ const skillCategoryDots = {
   tools: "bg-muted",
 };
 
+const cardAccents = [
+  { rail: "border-l-line", ring: "border-line", text: "text-line" },
+  { rail: "border-l-amber", ring: "border-amber", text: "text-amber" },
+  { rail: "border-l-green", ring: "border-green", text: "text-green" },
+];
+
 function Reveal({ children, className = "" }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -302,53 +308,48 @@ export default function App() {
               </Reveal>
 
               <div className="grid sm:grid-cols-2 gap-5">
-                {projects.map((p, i) => (
-                  <Reveal key={p.id}>
-                    <button
-                      onClick={() => setActive(p.id)}
-                      className="ticket-card group relative flex w-full flex-col overflow-hidden rounded-2xl border border-border bg-raised text-left cursor-pointer"
-                    >
-                      <div className="aspect-[16/10] overflow-hidden bg-border">
-                        <img
-                          src={p.image}
-                          alt={`Capture d'écran du projet ${p.name}`}
-                          loading="lazy"
-                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="flex flex-1 flex-col px-5 pt-4 pb-5">
-                        <div className="font-mono text-[10.5px] tracking-[0.1em] text-muted">
-                          {t.ticketPrefix} {String(i + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
-                        </div>
-                        <div className="mt-2 font-mono text-[11px] uppercase tracking-[0.06em] text-amber">
-                          {p[lang].tag}
-                        </div>
-                        <div className="mt-2 mb-2.5 font-display text-lg">{p.name}</div>
-                        <p className="mb-4 flex-1 text-muted text-[13.5px] leading-snug">{p[lang].desc}</p>
-                        <div className="mb-4 flex flex-wrap gap-1.5">
-                          {p.tech.map((tc) => (
-                            <TechChip key={tc}>{tc}</TechChip>
-                          ))}
-                        </div>
-                        <div className="relative mb-4 border-t-2 border-dashed border-border before:absolute before:-left-[29px] before:-top-[9px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-bg before:content-[''] after:absolute after:-right-[29px] after:-top-[9px] after:h-[18px] after:w-[18px] after:rounded-full after:bg-bg after:content-['']" />
-                        <div className="flex items-center justify-between gap-2.5">
-                          <div className="flex h-4 items-end gap-[2px] opacity-40" aria-hidden="true">
-                            {Array.from({ length: 16 }).map((_, j) => (
-                              <span
-                                key={j}
-                                className="w-[2px] bg-ink"
-                                style={{ height: `${6 + ((j * 37) % 10)}px` }}
-                              />
-                            ))}
-                          </div>
-                          <span className="flex items-center gap-1 font-mono text-xs text-line">
-                            {t.learnMore} <ArrowUpRight size={13} />
+                {projects.map((p, i) => {
+                  const accent = cardAccents[i % cardAccents.length];
+                  return (
+                    <Reveal key={p.id}>
+                      <button
+                        onClick={() => setActive(p.id)}
+                        className={`ticket-card group relative flex w-full flex-col overflow-hidden rounded-2xl border border-border border-l-4 ${accent.rail} bg-raised text-left cursor-pointer`}
+                      >
+                        <div className="relative aspect-[16/10] overflow-hidden bg-border">
+                          <img
+                            src={p.image}
+                            alt={`Capture d'écran du projet ${p.name}`}
+                            loading="lazy"
+                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <span
+                            className={`absolute top-3 right-3 flex h-7 w-7 items-center justify-center rounded-full bg-bg border-2 ${accent.ring} font-mono text-[11px] font-semibold ${accent.text}`}
+                          >
+                            {String(i + 1).padStart(2, "0")}
                           </span>
                         </div>
-                      </div>
-                    </button>
-                  </Reveal>
-                ))}
+                        <div className="flex flex-1 flex-col px-5 pt-4 pb-5">
+                          <div className={`font-mono text-[11px] uppercase tracking-[0.06em] ${accent.text}`}>
+                            {p[lang].tag}
+                          </div>
+                          <div className="mt-2 mb-2.5 font-display text-lg">{p.name}</div>
+                          <p className="mb-4 flex-1 text-muted text-[13.5px] leading-snug">{p[lang].desc}</p>
+                          <div className="mb-4 flex flex-wrap gap-1.5">
+                            {p.tech.map((tc) => (
+                              <TechChip key={tc}>{tc}</TechChip>
+                            ))}
+                          </div>
+                          <div className="flex items-center justify-end">
+                            <span className="flex items-center gap-1 font-mono text-xs text-line">
+                              {t.learnMore} <ArrowUpRight size={13} />
+                            </span>
+                          </div>
+                        </div>
+                      </button>
+                    </Reveal>
+                  );
+                })}
               </div>
             </div>
           </section>
