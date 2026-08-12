@@ -204,7 +204,7 @@ export default function App() {
             {t.ctaContact}
           </a>
           <a
-            href="/cv.pdf"
+            href="/Jordan-Valente-CV.pdf"
             download="Jordan-Valente-CV.pdf"
             className="font-mono text-[13.5px] border border-border text-muted px-5 py-3.5 rounded-[10px] flex items-center gap-2"
           >
